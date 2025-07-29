@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cloud Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #002244;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    .profile img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #002244;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease-in-out;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+    .profile h2 {
+      font-size: 2rem;
+      margin: 15px 0 10px;
+    }
+    .profile p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h4 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 1rem;
+    }
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Cloud Platform Portfolio</h1>
+  </header>
+
+  <div class="profile">
+    <img src="sharayu.jpg" alt="Profile Picture" class="circle-image" />
+    <h2>Sharayu Nimbalkar</h2>
+    <p>Cloud Enthusiast | AWS Learner at Fortune Cloud | Focused on building scalable cloud-native solutions</p>
+  </div>
+
+  <div class="section">
+    <h3>My Skills</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>AWS Services</h4>
+        <p>Hands-on with EC2, S3, RDS, Route 53, CloudWatch, IAM, and VPC.</p>
+      </div>
+      <div class="card">
+        <h4>DevOps Tools</h4>
+        <p>Basic experience with Git, CI/CD, and automation through shell scripting.</p>
+      </div>
+      <div class="card">
+        <h4>Networking Concepts</h4>
+        <p>Understanding of Subnets, NACLs, Security Groups, and Route Tables.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Projects</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>WordPress Hosting</h4>
+        <p>Deployed a full WordPress site using EC2 and Nginx on AWS with domain setup.</p>
+      </div>
+      <div class="card">
+        <h4>Python Web App</h4>
+        <p>Hosted Flask app with RDS integration on EC2 Linux instance with SSH and security configurations.</p>
+      </div>
+      <div class="card">
+        <h4>3-Tier Architecture</h4>
+        <p>Implemented secure multi-tier VPC using Public, App, and DB subnets with ELB and NAT Gateway.</p>
+      </div>
+      <div class="card">
+        <h4>Monitoring with CloudWatch</h4>
+        <p>Configured CloudWatch alarms and dashboards for EC2 and RDS monitoring with SNS notifications.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Sharayu Nimbalkar | Designed with ❤️ using HTML & CSS
+  </footer>
+</body>
+</html>
