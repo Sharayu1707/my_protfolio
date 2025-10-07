@@ -37,7 +37,7 @@ It showcases my skills and projects in **AWS and Cloud Computing**.
 ---
 
 ## 🛠️ Tech Stack
-- HTML, CSS  
+- HTML, CSS ,JavaScript 
 - AWS Cloud Services  
 
 ---
